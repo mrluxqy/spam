@@ -11,9 +11,10 @@ function print_color() {
 function bienvenida_ascii() {
     clear
     print_color 32 "====================================="
-    print_color 36 "       BIENVENIDO AL BOT MANAGER      "
+    print_color 36 "       BIENVENIDO AL BOT MANAGER     "
     print_color 32 "====================================="
-    print_color 34 "     Preparando el entorno...         "
+    print_color 34 "     Preparando el entorno...        "
+    print_color 34 "      By @Lux_qy                     "
     print_color 32 "====================================="
 }
 
