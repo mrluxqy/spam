@@ -32,11 +32,13 @@ function instalar_dependencias() {
             print_color 33 "Instalación para Termux seleccionada."
             pkg update && pkg upgrade -y
             pkg install python jq -y
+            pip install pycryptodome
             ;;
         2)
             print_color 33 "Instalación para Linux seleccionada."
             sudo apt update && sudo apt upgrade -y
             sudo apt install python3 python3-pip jq -y
+            pip3 install pycryptodome
             ;;
         3)
             print_color 33 "Instalación para CMD seleccionada."
@@ -46,9 +48,9 @@ function instalar_dependencias() {
             print_color 36 "Verificando y actualizando pip..."
             python.exe -m pip install --upgrade pip
 
-            # Instalar paquetes de Python: telethon, schedule y jq
-            print_color 36 "Instalando paquetes de Python: jq, telethon y schedule..."
-            pip install jq telethon schedule
+            # Instalar paquetes de Python: telethon, schedule y pycryptodome
+            print_color 36 "Instalando paquetes de Python: jq, telethon, schedule y pycryptodome..."
+            pip install jq telethon schedule pycryptodome
             print_color 32 "Paquetes de Python instalados correctamente."
             ;;
         *)
